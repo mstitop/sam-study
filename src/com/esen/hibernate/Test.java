@@ -10,5 +10,6 @@ public class Test {
 		Configuration cfg = new Configuration();
 		SessionFactory sf = cfg.configure().buildSessionFactory();
 		//update by sam master
+		//update by sam master 2 test
 	}
 }
