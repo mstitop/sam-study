@@ -6,7 +6,7 @@ import javax.persistence.MappedSuperclass;
 import org.hibernate.annotations.GenericGenerator;
 
 /**
- * 提取所有实体的id生成策略
+ * 提取所有实体的id生成策略,ceshi
  * @author sam
  *
  */
