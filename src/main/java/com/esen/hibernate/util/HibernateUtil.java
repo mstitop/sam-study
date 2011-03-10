@@ -21,11 +21,6 @@ public class HibernateUtil {
 	 */
 	public static final String ENTITY_PACKAGE = "entity.package";
 
-	/**
-	 * 自定义的hibernate配置文件路径
-	 */
-	public static final String CONFIG_PATH = "hibernate/hibernate.cfg.xml";
-
 	private static SessionFactory sf;
 
 	public synchronized static SessionFactory getSessionFactory() {
@@ -68,7 +63,7 @@ public class HibernateUtil {
 
 	private static void buildSessionFactory() {
 		Configuration config = new Configuration();
-		config.configure(CONFIG_PATH);
+		config.configure();
 		addAnntationClazz(config);
 		sf = config.buildSessionFactory();
 	}
