@@ -1,7 +1,11 @@
 package com.esen.hibernate.entity;
 
 import javax.persistence.Entity;
-
+/**
+ * 
+ * @author sam
+ *
+ */
 @Entity
 public class User extends BaseId {
 	private String name;
