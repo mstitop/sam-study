@@ -13,7 +13,6 @@ public class UserTest {
 
 	@Test
 	public void testAdd() {
-		log.debug("test");
 		User user = new User();
 		user.setName("test");
 		HibernateUtil.save(user);
