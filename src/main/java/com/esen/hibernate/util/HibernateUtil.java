@@ -102,6 +102,7 @@ class Template {
 			if (tx != null) {
 				tx.rollback();
 			}
+			e.printStackTrace();
 		}
 		finally {
 			if (session != null && session.isOpen()) {

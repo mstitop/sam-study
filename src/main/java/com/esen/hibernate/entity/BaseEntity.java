@@ -1,7 +1,10 @@
 package com.esen.hibernate.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Version;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -11,8 +14,10 @@ import org.hibernate.annotations.GenericGenerator;
  *
  */
 @MappedSuperclass
-public class BaseId {
+public class BaseEntity implements Serializable{
 	protected String id;
+	
+	protected long version;
 
 	public void setId(String id) {
 		this.id = id;
@@ -23,6 +28,15 @@ public class BaseId {
 	@GenericGenerator(name = "uuid", strategy = "uuid")
 	public String getId() {
 		return id;
+	}
+	
+	@Version
+	public long getVersion() {
+		return version;
+	}
+
+	public void setVersion(long version) {
+		this.version = version;
 	}
 
 }

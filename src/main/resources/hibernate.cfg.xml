@@ -11,5 +11,6 @@
 		<property name="connection.url">jdbc:mysql://192.168.1.116:3306/test?useUnicode=true&amp;characterEncoding=utf8</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">root</property>
+		<property name="entity.package">com.esen.hibernate.entity</property>
 	</session-factory>
 </hibernate-configuration>
